@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.1.2/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="music-player">
+        <div class="header">
+            <div class="menu">&#9776;</div>
+            <div class="now-playing">
+                <div>PLAYING NOW</div>
+            </div>
+            <div class="playlist-icon">&#9835;</div>
+        </div>
+        <img src="img/free-beat-cover.jpg" alt="Cover" class="cover" id="cover-image">
+        <div class="text-center py-2">
+            <h5 id="track-title">Free Beat</h5>
+            <p id="track-artist">Kelvin Drayz</p>
+        </div>
+        <div class="progress-container">
+            <span id="current-time">0:00</span>
+            <div class="progress-bar">
+                <div class="progress" id="progress"></div>
+            </div>
+            <span id="duration">3:00</span>
+        </div>
+        <div class="controls">
+            <button id="prev" class="btn btn-link control-btn">&#9664;&#9664;</button>
+            <button id="play-pause" class="btn btn-link control-btn">&#9654;</button>
+            <button id="next" class="btn btn-link control-btn">&#9654;&#9654;</button>
+        </div>
+        <ul class="list-group list-group-flush" id="track-list">
+            <!-- Track items will be dynamically generated here -->
+        </ul>
+        <audio id="audio-player"></audio>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
